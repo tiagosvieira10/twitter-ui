@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client' 
-import {House} from 'phosphor-react'
+import {Hash, Bell, Envelope, DotsThreeCircle, FileText, User, BookmarkSimple,Sparkle, House} from 'phosphor-react'
 
 import './global.css'
 
 import twitterLogo from './assets/logo-twitter.svg'
+import { Tweet } from './components/Tweet'
 
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
@@ -19,20 +20,64 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
           <House weight='fill'/>
           Home
         </a>
-        <a href="">Explorer</a>
-        <a href="">Notifications</a>
-        <a href="">Messages</a>
-        <a href="">Bookmarks</a>
-        <a href="">List</a>
-        <a href="">Profile</a>
-        <a href="">More</a>
+        <a href="">
+          <Hash/> 
+          Explorer
+        </a>
+        <a href="">
+         <Bell/> 
+          Notifications
+        </a>
+        <a href="">
+          <Envelope/>
+          Messages
+        </a>
+        <a href="">
+          <BookmarkSimple/>
+          Bookmarks
+        </a>
+        <a href="">
+          <FileText/>
+          List
+        </a>
+        <a href="">
+          <User/>
+          Profile
+        </a>
+        <a href="">
+         <DotsThreeCircle/>
+          More
+        </a>
       </nav>
 
       <button className='new-tweet'>Tweet</button>
     </aside>
 
     <div className='content'>
-      content
+      <main className='timeline'>
+        <div className="timeline-header">
+          Home 
+          <Sparkle/>
+        </div>
+
+        <form className='new-tweet-form'>
+
+          <label htmlFor="tweet">
+            <img src="https://github.com/tiagosvieira10.png" alt="Tiago Vieira" />
+            <textarea id="tweet" placeholder="O que está acontecendo?"></textarea>
+          </label>
+
+          <button type='submit'>Tweet</button>
+        </form>
+
+        <div className="separator"/>
+
+        <Tweet/>
+        <Tweet/>
+        <Tweet/>
+        <Tweet/>
+
+      </main>
     </div>
       
    </div>
