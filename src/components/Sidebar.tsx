@@ -14,35 +14,35 @@ export function Sidebar (){
     <nav className='main-navigation'>
       <NavLink to="/">
         <House weight='fill'/>
-        Home
+        <span>Home</span>
       </NavLink>
       <a href="">
         <Hash/> 
-        Explorer
+        <span> Explorer</span>
       </a>
       <a href="">
        <Bell/> 
-        Notifications
+        <span> Notifications</span>
       </a>
       <a href="">
         <Envelope/>
-        Messages
+        <span> Messages</span>
       </a>
       <a href="">
         <BookmarkSimple/>
-        Bookmarks
+        <span> Bookmarks</span>
       </a>
       <a href="">
         <FileText/>
-        List
+        <span> List</span>
       </a>
       <a href="">
         <User/>
-        Profile
+        <span> Profile</span>
       </a>
       <a href="">
        <DotsThreeCircle/>
-        More
+        <span> More</span>
       </a>
     </nav>
 
