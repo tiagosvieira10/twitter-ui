@@ -7,12 +7,12 @@ import './Default.css'
 export function Default(){
     return(
         <div className='layout'>
-    <Sidebar />
+        	<Sidebar />
 
-    <div className='content'>
-        <Outlet/>
-    </div>
+            <div className='content'>
+                <Outlet/>
+            </div>
       
-   </div>
+        </div>
     )
 }
